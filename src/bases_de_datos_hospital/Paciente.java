@@ -15,13 +15,6 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(String nombre, String dni, int edad, String diagnostico) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.dni = dni;
-        this.diagnostico = diagnostico;
-    }
-
     public Paciente(int id, String nombre, int edad, String dni, String diagnostico) {
         this.id = id;
         this.nombre = nombre;
@@ -29,6 +22,34 @@ public class Paciente {
         this.dni = dni;
         this.diagnostico = diagnostico;
     }
+
+   public Paciente(String nombre, String dni, int edad, String diagnostico) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.dni = dni;
+        this.diagnostico = diagnostico;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+   public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDiagnostico(String diagnostico) {
+        this.diagnostico = diagnostico;
+    }
+   
 
     public int getId() {
         return id;
@@ -49,26 +70,5 @@ public class Paciente {
     public String getDiagnostico() {
         return diagnostico;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public void setDiagnostico(String diagnostico) {
-        this.diagnostico = diagnostico;
-    }
-   
    
 }
